@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/spice-background.jpg'); /* Add a spice-themed background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+.header-top, .header-main, nav, .products, .info-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent background for readability */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.contact-info span {
+    margin-right: 20px;
+}
+
+.top-right-links {
+    display: flex;
+    align-items: center;
+}
+
+.top-right-links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.top-right-links span {
+    margin: 0 5px;
+    color: #333;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-main h1 {
+    margin: 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.search-bar button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+nav {
+    padding: 10px 0;
+    background-color: #d9534f;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.products {
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.prev, .next {
+    background-color: #333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.info-box h3 {
+    margin-top: 0;
+}
